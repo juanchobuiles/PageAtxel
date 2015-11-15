@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATXEL - Sistemas de información. DataX - Sistema integrado para gestión empresarial</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="shortcut icon" type="image/x-icon" href="ICO_DataX.ico">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    
+     <link rel="stylesheet" href="css/estilos.css">
+
+    
+</head>
+<body>
+	<div id="contenido">
+		<header></header>
+		<div id="principal">
+			<div id="tabs">
+				<ul>
+  					<h3>Bolsa de Empleo</h3>
+    				<li><a href="#tabs-1">Portal para Empresas</a></li>
+    				<li><a href="#tabs-2">Portal para Personas</a></li>
+  				</ul>
+  				<div id="tabs-1">
+    				<h2>Ingresa a Nuestra Bolsa de Empleo.</h2>
+    				<p>Si eres una empresa cliente de las soluciones de <b>DataX</b> y estas en busca de personal capacitado y con experiencia en el manejo de este. <b>ATXEL LTDA</b>&nbsp;te ofrece este portal sin ningún costo, para que publiques tus ofertas laborales y también consultes el currículo de personal que se ajuste a su necesidad.</p>
+
+    				<h3>Acceso</h3>
+    				<form>
+    					<div id="empleo-nombre" >
+    						<label for="nombre">Nombre de usuario</label>
+    						<input type="text" id="nombre" name="nombreUsuario_txt"  class="cambio" title="Nombre de usuario" placeholder="Ingresa tu usuario"  autofocus required /> 
+    					</div>
+
+    					<div id="empleo-contraseña">
+    						<label for="contraseña">Contraseña</label>
+    						<input type="password" name="contraseña_txt" id="contraseña" class="cambio" title="contraseña" placeholder="Ingresa tu contraseña" requerid />
+    					</div>
+    					<div>
+    						<input type="submit"  value="Ingresar" />
+    					</div>
+    					<ol>
+    						<li><a href="#tabs-3">¿Olvido su Nombre de usuario o Contraseña?</a></li>
+    						<li><a href="registro.html">Registrese</a></li>
+    					</ol>
+    				</form>
+  				</div>
+  				<div id="tabs-2">
+    				<h2>Ingresa a Nuestra Bolsa de Empleo.</h2>
+    				<p>Si eres un profesional con experiencia en el manejo de <b>DataX</b> y estas en busca de una oferta laboral.
+    				<b>ATXEL LTDA</b>&nbsp;te ofrece este portal sin ningún costo, para que adjuntes tu currículo y las empresas registradas en el portal puedan tener acceso a esta. También puedes consultar las ofertas laborales que se encuentren vigentes.</p>
+
+    				<h3>Acceso</h3>
+    				<form>
+    					<div id="empleo-nombre">
+    						<label for="nombre">Nombre de usuario</label>
+    						<input type="text" id="nombre" name="nombreUsuario_txt"  class="cambio" title="Nombre de usuario" placeholder="Ingresa tu usuario"  autofocus required /> 
+    					</div>
+
+    					<div id="empleo-contraseña">
+    						<label for="contraseña">Contraseña</label>
+    						<input type="password" name="contraseña_txt" id="contraseña" class="cambio" title="contraseña" placeholder="Ingresa tu contraseña" requerid />
+    					</div>
+    					<div>
+    						<input type="submit"  value="Ingresar" />
+    					</div>
+    					<ol>
+    						<li><a href="#tabs-3">¿Olvido su Nombre de usuario o Contraseña?</a></li>
+    						<li><a href="#tabs-4">Registrese</a></li>
+    					<ol>
+    				</form>
+  				</div>
+  				
+  			</div>
+		</div>
+		<footer id="quienes-footer"></footer>
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script>
+    !window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
+   </script>
+  <script src="js/efectos.js"></script>
+  <script>$(document).on("ready",iniciarTablas);</script>
+</body>
+</html>

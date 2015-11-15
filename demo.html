@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="En este demo  usted encontrara todas las características necesarias para trabajar con el programa DataX." />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" type="image/x-icon" href="ICO_DataX.ico">
+	<title>ATXEL - Sistemas de información. Descargar Demo DataX Gratis</title>
+</head>
+<body>
+	<div id="contenido">
+		<header></header>
+		<div id="principal">
+			<section id="demo-contenido">
+				<p>En este demo  usted encontrara todas las características necesarias para trabajar con el programa DataX. <br>
+					Diligencie el formulario y envíelo. Después de haberlo enviado  aparecerá un botón de descarga, de clic ahí y de inmediato empezará a descargar el Demo.
+				</p>
+				<form id="demo-contacto" class="contacto">
+					<fieldset>
+						<legend>Ingrese sus datos personales</legend>
+						<div id="respuesta"></div>
+						<div>
+							<label for="demoNombre">Nombres:</label>
+							<input type="text" id="demoNombre" name="demoNombre_txt" class="cambio" title="Tu nombre" placeholder="Ingresa tus nombres" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+" autofocus required />
+						</div>
+						<div>
+							<label for="demoApellidos">Apellidos:</label>
+							<input type="text" id="demoApellidos" name="demoApellido_txt" class="cambio" title="Tu apellido" placeholder="Ingresa tus Apellidos" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+" required />
+						</div>
+						<div>
+							<label for="demoTelefono">Telefono fijo:</label>
+							<input type="text" id="demoTelefono" name="demoTelefono_txt" title="tu telefono fijo" placeholder="Ingresa tu telefono fijo">
+						</div>
+						<div>
+							<label for="demoCelular">Telefono Celular:</label>
+							<input type="text" id="demoCelular" name="demoCelular_txt" title="tu telefono celular" placeholder="Ingresar tu telefono celular">
+						</div>
+						<div>
+							<label for="demoEmail">Email:</label>
+							<input type="email" id="demoEmail" name="demoEmail_txt" class="cambio" title="Tu email" placeholder="Ingresa tu Email" required />
+						</div>
+						<div>
+							<label for="Asunto">Asunto:</label>
+							<input type="text" id="asunto" name="demoAsunto_txt" class="cambio" placeholder="Asunto de la solicitud" title="Asunto de la solicitud" required />
+						</div>
+						<div>
+							<label for="demoComentarios">Comentarios:</label>
+							<textarea id="demoComentarios" name="demoComentarios_txa" class="cambio" cols="50" rows="5" placeholder="Ingresa tus comentarios" title="Tus comentarios" ></textarea>
+						</div>
+						<div>
+						<input type="submit" class="cambio" value="Enviar" />
+						<img id="precarga" src="images/loader.gif" />
+						</div>
+						
+
+					</fieldset>
+				</form>
+				<section id="demo-especificaciones" class="especificaciones">
+					<div>
+						<h3>Especificaciones Tecnicas</h3>
+						
+					</div>
+					
+					<p>Para el uso de este demo como minino deben de cumplir con los siguientes requisitos: </p>
+					<ul>
+						<li>Sistema Opertivo Windows XP, en adelante</li>
+						<li>Memoria Ram 512 MB</li>
+						<li>Procesador INTEL PENTIUM II, en adelante</li>
+						<li>Arquitectura de 32 Bits o 64 Bits</li>
+					</ul>
+					<img src="images/demo-especificaciones.png">
+					<a href="#">Para mas información clic aqui</a>
+
+				</section>
+			</section>
+			<button><img src="images/ome_03.png"></button>
+		</div>
+		<footer></footer>
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        !window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
+    </script>
+    <script src="js/efectos.js"></script>
+    <script>
+    	$(document).on("ready",cargarContenidoComun);
+    	$("#demo-contacto").on("submit",enviarDatosDemo);
+    </script>
+</body>
+</html>

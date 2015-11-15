@@ -1,0 +1,20 @@
+/* atxel.com | Sistemas de información. DataX - Sistema integrado para gestión empresarial - http://www.atxel.com/ */
+
+/* TEAM */
+	Fundador: Julian Andres Builes
+	Contacto: julianbuilesc[at]gmail.com
+	Twitter: @juanchobuiles
+	From: Cali , Colombia
+
+/* THANKS */
+	@jonmircha http://bextlan.com/jonmircha
+	@betxlan  http://bextlan.com/
+
+/* SITE */
+	Last update: 2015/01/20
+	Language: Español
+	Standars: HTML5, CSS3 , Jquery 
+	Components: Responsive Design, Google Maps
+	Software: SublimeText2, Fireworks
+
+/* http://humanstxt.org/ */

@@ -1,0 +1,248 @@
+*
+{
+	border: 0;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+  font-family: sans-serif;
+}
+body ,html
+{
+  background-image: url(../images/fondo-content.png);
+	font: 13px/19px  Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	min-height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+
+}
+dl
+{
+  margin: 2%  1% ;
+  width: 98%;
+}
+dt, dd
+{
+   padding: 20px;
+}
+dt
+{
+  margin-bottom: 0.5em;
+  background: #023655;
+  color: white;
+  border-bottom: 1px solid #023655;
+  border-radius: 0.5em ;
+  border-top: 1px solid #023655;
+  cursor: pointer;
+}
+dd
+{
+  background: #F5F5F5;
+  display: none;
+  line-height: 1.6em;
+}
+dt.activo, dt:hover
+{
+  background: #da6e09;
+  border-bottom: 1px solid #da6e09;
+  border-top: 1px solid #da6e09;
+}
+dt.activo
+{
+  margin-bottom: 0em;
+}
+dt:before
+{
+  content: "▸";
+  margin-right: 10px;
+ }
+dt.activo:before
+{
+  content: "▾";
+
+}
+img, video 
+{
+  max-width: 100%;
+}
+
+video
+{
+  display: block;
+  margin: auto;
+  padding: .5em 0;
+}
+.Colum1 , .Colum2
+{
+  display: inline-block;
+  vertical-align: top;
+}
+.Colum1
+{
+  width: 70%;
+}
+.Colum2
+{
+	margin-top: 1%;
+	margin-right: 0;
+	border: 1px solid #023655;
+	border-radius: 1em;
+  background: #F5F5F5;
+	width:28%;
+	height: 30em;
+}
+.colum2_titulo
+{
+	background:#023655;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	color: white;
+	height: 2.5em;
+	margin-bottom: 0.25em;
+}
+.colum2_titulo h2
+{
+	padding-top: 0.5em;
+}
+.colum2_article1 , .colum2_article2  ,  .colum2_article3 ,  article:not(.colum2_article4) 
+{
+  border-bottom: 1px solid #023655;
+}
+
+.colum2_article1 , .colum2_article2  ,  .colum2_article3 ,  .colum2_article4
+{
+ text-align: left;
+}
+.colum2_article1 p , .colum2_article2 p  ,  .colum2_article3 p ,  .colum2_article4 p
+{
+  margin-left: 1%;
+  text-align: left;
+}
+
+
+.colum2_article1 .animar , .colum2_article2 .animar  ,  .colum2_article3 .animar ,  .colum2_article4 .animar 
+{
+
+  margin-left: 5%;
+  margin-top: 2%;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.colum2_article1 .animar:hover , .colum2_article2 .animar:hover  ,  .colum2_article3 .animar:hover ,  .colum2_article4 .animar:hover 
+{
+	visibility: visible;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  -webkit-animation-name: animar;
+  animation-name: animar;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.colum2_article2
+{
+  padding-bottom: 2%;
+}
+.colum2_article2 .animar
+{
+  margin-top: 5%;
+}
+
+.seminario_header
+{
+  background: #023655;
+  height: 60px;
+	justify-content:space-between;
+	display: flex;
+	position: relative;
+	z-index: 10;
+}
+
+.seminario_log_izq , .seminario_log_der
+{
+	display: inline-block;
+  height: inherit;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.seminario_log_izq img
+{
+  border: none;
+  height: 66px;
+  max-width: 100%;
+  vertical-align: bottom;
+  width: 183px;
+}
+
+.seminario_log_der  img
+{
+  border: none;
+  height: 53px;
+  max-width: 100%;
+	vertical-align: middle;
+  width: 216px;
+}
+.titulo
+{
+	border-bottom: 1px solid #023655;
+	margin: 2em 1em 0 1em ;
+	text-align: left;
+	padding-bottom: 0.5em;
+
+}
+.titulo h1 , .titulo h3
+{
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+.titulo h1
+{
+	margin-left: 0.5em;
+	width: 48%;
+}
+.titulo h3
+{
+	font-size: 2em;
+	text-align: right;
+	width: 48%;
+
+}
+
+@-webkit-keyframes animar {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes animar {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
